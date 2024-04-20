@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maanav - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 43);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(0, 0, 80);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: lightsalmon;
+            font-size: 1.22rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgba(14, 4, 73, 0.734);
+            height: 1px;
+            margin: 40px 80px;
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 110px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+
+        }
+
+        .rightSection img {
+            width: 91%;
+            margin: 100px 52;
+        }
+
+        .purple {
+            color: rgb(93, 37, 142);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(93, 37, 142);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 2rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 70vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 85x;
+            color: gray;
+            width: 140px;
+            font-size: 12px;
+        }
+
+        .thirdSection{
+            max-width: 34px;
+            margin: 52px;
+        }
+        .thirdSection h1 {
+            font-size: 2rem;
+        }
+        .thirdSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Maanav's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Portfolio</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hiii, My Name Is <span class="purple">Maanav</span>
+                I am a Beginner as a Web Developer.
+                <span id="element"></span>
+            </div>
+
+            <div class="rightSection">
+                <img src="bg.png.jpg">
+            </div>
+        </section>
+        <hr style="
+        border: 0;
+        background-color: rgb(47, 20, 98);
+        height: 1px;
+        margin: 40px;">
+        <section class="secondSection">
+            <span class="text-gray"> What I have done so far</span>
+            <h1>Education</h1>
+            <div class="box">
+                <div class="vertical">
+                    <div class="vertical-title">
+                        X - Standard CBSE Board (2018-19)
+                    </div>
+                    <div class="vertical-desc">
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        XII - Standard CBSE Board (2020-21)
+                        <div class="vertical-desc">
+                        </div>
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        BCA - IITM Janakpuri (2021-24)
+                        <div class="vertical-desc">
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Final Year Student', 'Quick Learner', 'Punctual', 'Organised'],
+            typeSpeed: 80,
+        });
+    </script>
+</body>
+
+</html>
